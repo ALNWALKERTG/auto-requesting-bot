@@ -2,7 +2,7 @@
     "name": "CODER-BOT",
     "description": "The Telegram Bot",
     "keywords": ["Telegram", "bot", "coder"],
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "repository": "https://github.com/MrTG-CodeBot/Obanai",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
