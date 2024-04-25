@@ -26,7 +26,7 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 F_SUB = os.environ.get("FORCE_SUB", "") 
 
 # for mongodb
-DATABASE_NAME = os.environ.get("DB_NAME", "")     
-DATABASE_URI  = os.environ.get("DB_URL", "")
+DATABASE_NAME = os.environ.get("DB_NAME", "alanwalker")     
+DATABASE_URI  = os.environ.get("DB_URL", "mongodb+srv://alanwalker:alanwalkerautobot@cluster0.a6os5ja.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
