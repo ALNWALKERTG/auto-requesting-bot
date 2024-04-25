@@ -5,26 +5,10 @@ from database.users_db import db
 import logging, re, asyncio, time, shutil, psutil, os, sys
 from utils import get_size, temp
 
-@Client.on_message(filters.command("id",prefixes="."))
+@Client.on_message(filters.command("id"))
 async def id_handler(client, message:Message):
       chat_type = message.chat.type
       if chat_type in [enums.ChatType.PRIVATE]:
-          if message.reply_to_message:
-              user_id = message.reply_to_message.from_user.id
-              first = message.reply_to_message.from_user.first_name
-              last = message.reply_to_message.from_user.last_name or ""
-              username = message.reply_to_message.from_user.username
-              dc_id = message.reply_to_message.from_user.dc_id or ""
-              fake = message.reply_to_message.from_user.is_fake
-              bot = message.reply_to_message.from_user.is_bot
-              scam = message.reply_to_message.from_user.is_scam
-              upgrade = message.reply_to_message.from_user.is_premium
-              verify = message.reply_to_message.from_user.is_verified
-              online = message.reply_to_message.from_user.last_online_date or ""
-              await message.reply_text(
-                  f"<b>➲ ғɪʀsᴛ ɴᴀᴍᴇ:</b> {first}\n<b>➲ ʟᴀsᴛ ɴᴀᴍᴇ:</b> {last}\n<b>➲ ᴜsᴇʀɴᴀᴍᴇ:</b> @{username}\n<b>➲ ɪᴅ:</b> <code>{user_id}</code>\n<b>➲ ᴅᴄ ɪᴅ:</b> <code>{dc_id}</code>\n➲ Is ғᴀᴋᴇ: {fake}\n➲ Is ʙᴏᴛ: {bot}\n➲ ɪs sᴄᴀᴍ: {scam}\n➲ Is ᴠᴇʀɪғɪᴇᴅ: {verify}\n➲ Is ᴘʀᴇᴍɪɴᴜᴍ: {upgrade}\n➲ Lᴀsᴛ ᴏɴʟɪɴᴇ ᴅᴀᴛᴇ: {online}" ,
-                  quote=True)
-          else:
               user_id = message.from_user.id
               first = message.from_user.first_name
               last = message.from_user.last_name or ""
