@@ -21,26 +21,12 @@ PORT = os.environ.get("PORT", "8080")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-REQUESTED_CHANNEL = int(os.environ.get("REQUESTED_CHANNEL", ""))
-MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 
 # for force subscribe[Your Force Sub Channel Username Without @ (eg:- sd_bots)]
 F_SUB = os.environ.get("FORCE_SUB", "") 
-
-# important information for your bot
-S_GROUP = environ.get('S_GROUP', "")
-S_CHANNEL = environ.get('S_CHANNEL', "")
 
 # for mongodb
 DATABASE_NAME = os.environ.get("DB_NAME", "")     
 DATABASE_URI  = os.environ.get("DB_URL", "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
-
-# for google ai 
-# how to get the api key == https://t.me/sd_bots/256 (copy this link and search on telegram)
-GOOGLE_API_KEY = os.environ.get('API_KEY', '')
-
-#for spotify 
-SPOTIFY_CLIENT_ID = os.environ.get('SPOTIFY_CLIENT_ID', '')
-SPOTIFY_CLIENT_SECRET = os.environ.get('SPOTIFY_CLIENT_SECRET', '')
