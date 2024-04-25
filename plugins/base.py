@@ -2,6 +2,7 @@ from pyrogram import Client as user, filters, enums
 from pyrogram.types import Message
 from Script import script
 from database.users_db import db
+from info import ADMINS
 import logging, re, asyncio, time, shutil, psutil, os, sys
 from utils import get_size, temp
 
