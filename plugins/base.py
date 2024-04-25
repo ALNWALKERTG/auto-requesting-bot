@@ -1,4 +1,4 @@
- filters, enums
+from pyrogram import Client as filters, enums
 from pyrogram.types import Message
 from Script import script
 from database.users_db import db
@@ -6,7 +6,7 @@ from info import ADMINS
 import logging, re, asyncio, time, shutil, psutil, os, sys
 from utils import get_size, temp
 
-@Client.on_message(filters.command('id'))
+@Client.on_message(filters.command("id"))
 async def id_handler(client, message:Message):
       chat_type = message.chat.type
       if chat_type in [enums.ChatType.PRIVATE]:
