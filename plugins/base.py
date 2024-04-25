@@ -97,4 +97,4 @@ async def get_stats(bot, message):
     free = 536870912 - size
     size = get_size(size)
     free = get_size(free)    
-    await rju.edit(script.STATUS_TXT.format(total_users, total_chats))
+    await rju.edit(script.STATUS_TXT.format(total_users))
