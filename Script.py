@@ -39,5 +39,5 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>. ɪ ᴀᴍ ᴀ sᴘᴇᴄɪᴀ�
 /chats (admin only) - This command retrieves a list of all chats stored in the bot's database. It shows the chat title, ID, and indicates if the chat is disabled.
 /stats - This command displays statistics about the bot's usage. It shows the total number of users, total chats, and the size of the database.
 /broadcast - ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssɢᴇ.
-/group_broadcast - ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssɢᴇ ᴛᴏ ɢʀᴏᴜᴘs"""
 /group_broadcast - ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssɢᴇ ᴛᴏ ɢʀᴏᴜᴘs.
+/group_broadcast - ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssɢᴇ ᴛᴏ ɢʀᴏᴜᴘs."""
